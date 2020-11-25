@@ -5,7 +5,7 @@ import smtplib
 from bs4 import BeautifulSoup
 from ast import literal_eval
 
-token = "token"
+token = "NzgwOTUxMzUwNDA1NDk2ODYz.X72jnw.aa4Briq0GpnbpCgH2EKj1hfM8Zc"
 
 breakfast = "x"
 lunch = "x"
