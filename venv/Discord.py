@@ -4,7 +4,7 @@ import requests
 import schedule
 from ast import literal_eval
 
-token = "NzgwOTUxMzUwNDA1NDk2ODYz.X72jnw.ViRXmCcfg9s0l28SnMqIiKMV-IA"
+token = ""
 
 breakfast = "x"
 lunch = "x"
