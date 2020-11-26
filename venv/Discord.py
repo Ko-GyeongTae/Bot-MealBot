@@ -4,7 +4,7 @@ import requests
 import schedule
 from ast import literal_eval
 
-token = "token"
+token = "NzgwOTUxMzUwNDA1NDk2ODYz.X72jnw.ViRXmCcfg9s0l28SnMqIiKMV-IA"
 
 breakfast = "x"
 lunch = "x"
@@ -15,7 +15,7 @@ class MealBot(discord.Client):
 
     async def on_ready(self):
         #Game, Streaming, CustomActivity
-        game = discord.Game("요리")
+        game = discord.Game("!도움 요청")
         #계정상태 변경
         await client.change_presence(status=discord.Status.online, activity=game)
         print("Ready to Action...")
@@ -23,6 +23,16 @@ class MealBot(discord.Client):
     async def on_message(self, message):
         # sender == bot ? None
         if message.author.bot:
+            return None
+
+        if message.content == '!도움':
+            channel = message.channel
+            msg = "```\n!오늘급식 - 하루의 모든 급식 보여줌\n"
+            msg += "!아침 - 아침밥 보여줌\n"
+            msg += "!점심 - 점심밥 보여줌\n"
+            msg += "!저녁 - 저녁밥 보여줌\n"
+            msg += "!내일급식 - 내일급식 전체 보여줌\n```"
+            await channel.send(msg)
             return None
 
         if message.content == "!오늘급식":
@@ -77,8 +87,8 @@ if __name__ == "__main__":
     t_date = tommorrow.strftime('%Y-%m-%d')
 
     #Debug Date
-    #date = '2020-08-19'
-    #t_date = '2020-08-20'
+    date = '2020-08-19'
+    t_date = '2020-08-20'
 
     url = f'https://api.dsm-dms.com/meal/{date}'
     t_url = f'https://api.dsm-dms.com/meal/{t_date}'
