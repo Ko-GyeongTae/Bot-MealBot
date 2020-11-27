@@ -2,15 +2,18 @@ import discord
 import datetime
 import requests
 import schedule
+import time
 from ast import literal_eval
 
-token = ""
+token = "token"
 
 breakfast = "x"
 lunch = "x"
 dinner = "x"
 
+
 class MealBot(discord.Client):
+    channel = "NULL"
     print("debug ready")
 
     async def on_ready(self):
@@ -24,7 +27,12 @@ class MealBot(discord.Client):
         # sender == bot ? None
         if message.author.bot:
             return None
-
+        log = str(message.author) + ' :: ' + message.content
+        log += ' :: ' + str(time.localtime().tm_year) + '-' + str(time.localtime().tm_mon) + '-' \
+            + str(time.localtime().tm_mday)
+        log += ' :: ' + str(time.localtime().tm_hour) + ':' + str(time.localtime().tm_min) + ':' \
+               + str(time.localtime().tm_sec)
+        print(log)
         if message.content == '!도움':
             channel = message.channel
             msg = "```\n!오늘급식 - 하루의 모든 급식 보여줌\n"
@@ -78,6 +86,38 @@ class MealBot(discord.Client):
             msg += "\n\n```"
             await channel.send(msg)
             return None
+        """
+        if message.content == "!자동알림":
+            channel = message.channel
+
+        def morning_meal():
+            msg = "```\n" + "####" + date + "####"
+            msg += "\n\n*** 아침 ***\n" + ' ' + breakfast
+            msg += "\n```"
+            print(msg)
+            channel.send(msg)
+            return None
+
+        def noon_meal():
+            msg = "```\n" + "####" + date + "####"
+            msg += "\n\n*** 점심 ***\n" + ' ' + lunch
+            msg += "\n```"
+            print(msg)
+            channel.send(msg)
+            return None
+
+        def evening_meal():
+            msg = "```\n" + "####" + date + "####"
+            msg += "\n\n*** 저녁 ***\n" + ' ' + dinner
+            msg += "\n```"
+            print(msg)
+            channel.send(msg)
+            return None
+
+        schedule.every(3).seconds.do(morning_meal())
+        schedule.every(3).seconds.do(noon_meal())
+        schedule.every(3).seconds.do(evening_meal())
+        """
 
 if __name__ == "__main__":
     now = datetime.datetime.now()
@@ -124,6 +164,7 @@ if __name__ == "__main__":
         t_dinner = dinner.translate({ord('['): '', ord(']'): '', ord("'"): '', ord(','): '\n'})
 
     #Debug code
+
     print(now)
     print(tommorrow)
     print(date)
