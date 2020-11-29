@@ -5,7 +5,7 @@ import schedule
 import time
 from ast import literal_eval
 
-token = "token"
+token = "NzgwOTUxMzUwNDA1NDk2ODYz.X72jnw.ViRXmCcfg9s0l28SnMqIiKMV-IA"
 
 breakfast = "x"
 lunch = "x"
