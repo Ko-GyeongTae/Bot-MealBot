@@ -5,7 +5,7 @@ import schedule
 import time
 from ast import literal_eval
 
-token = "NzgwOTUxMzUwNDA1NDk2ODYz.X72jnw.6oGXqbb-xe1_B2hDaZycoIzqnJg"
+token = "token"
 
 msg = "x"
 now = "X"

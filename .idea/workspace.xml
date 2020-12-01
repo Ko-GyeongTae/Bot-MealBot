@@ -10,7 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30a72471-e778-4a09-97ec-ac28608f1f4a" name="Default Changelist" comment="" />
+    <list default="true" id="30a72471-e778-4a09-97ec-ac28608f1f4a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/venv/Discord.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Discord.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,6 +108,7 @@
       <workItem from="1606777790003" duration="772000" />
       <workItem from="1606778611788" duration="107000" />
       <workItem from="1606804036858" duration="602000" />
+      <workItem from="1606824699495" duration="230000" />
     </task>
     <servers />
   </component>
