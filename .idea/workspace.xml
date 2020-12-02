@@ -10,9 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30a72471-e778-4a09-97ec-ac28608f1f4a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/venv/Discord.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Discord.py" afterDir="false" />
-    </list>
+    <list default="true" id="30a72471-e778-4a09-97ec-ac28608f1f4a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +106,7 @@
       <workItem from="1606777790003" duration="772000" />
       <workItem from="1606778611788" duration="107000" />
       <workItem from="1606804036858" duration="602000" />
-      <workItem from="1606824699495" duration="230000" />
+      <workItem from="1606824699495" duration="1305000" />
     </task>
     <servers />
   </component>
@@ -132,9 +130,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="1920" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606267088567" />
-    <state x="326" y="275" key="FileChooserDialogImpl" timestamp="1606824694648">
+    <state x="326" y="275" key="FileChooserDialogImpl" timestamp="1606917632090">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="326" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606917632090" />
     <state x="2246" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606267083317" />
     <state x="326" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606824694648" />
     <state width="1877" height="280" key="GridCell.Tab.0.bottom" timestamp="1606778567205">
