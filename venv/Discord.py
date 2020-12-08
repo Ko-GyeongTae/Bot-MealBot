@@ -1,7 +1,6 @@
 import discord
 import datetime
 import requests
-import schedule
 import time
 from ast import literal_eval
 
@@ -31,10 +30,6 @@ class MealBot(discord.Client):
 
         date = now.strftime('%Y-%m-%d')
         t_date = tommorrow.strftime('%Y-%m-%d')
-
-        # Debug Date
-        #date = '2020-08-19'
-        #t_date = '2020-08-20'
 
         log = str(message.author) + ' :: ' + message.content
         log += ' :: ' + str(time.localtime().tm_year) + '-' + str(time.localtime().tm_mon) + '-' \
@@ -128,38 +123,7 @@ class MealBot(discord.Client):
             msg += "\n\n```"
             await channel.send(msg)
             return None
-        """
-        if message.content == "!자동알림":
-            channel = message.channel
 
-        def morning_meal():
-            msg = "```\n" + "####" + date + "####"
-            msg += "\n\n*** 아침 ***\n" + ' ' + breakfast
-            msg += "\n```"
-            print(msg)
-            channel.send(msg)
-            return None
-
-        def noon_meal():
-            msg = "```\n" + "####" + date + "####"
-            msg += "\n\n*** 점심 ***\n" + ' ' + lunch
-            msg += "\n```"
-            print(msg)
-            channel.send(msg)
-            return None
-
-        def evening_meal():
-            msg = "```\n" + "####" + date + "####"
-            msg += "\n\n*** 저녁 ***\n" + ' ' + dinner
-            msg += "\n```"
-            print(msg)
-            channel.send(msg)
-            return None
-
-        schedule.every(3).seconds.do(morning_meal())
-        schedule.every(3).seconds.do(noon_meal())
-        schedule.every(3).seconds.do(evening_meal())
-        """
 
 if __name__ == "__main__":
     client = MealBot()
