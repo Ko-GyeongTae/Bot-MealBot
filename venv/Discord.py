@@ -162,27 +162,5 @@ class MealBot(discord.Client):
         """
 
 if __name__ == "__main__":
-    now = datetime.datetime.now()
-    tommorrow = now + datetime.timedelta(days=1)
-
-    date = now.strftime('%Y-%m-%d')
-    t_date = tommorrow.strftime('%Y-%m-%d')
-
-    # Debug Date
-    #date = '2020-08-19'
-    #t_date = '2020-08-20'
-
-    url = f'https://api.dsm-dms.com/meal/{date}'
-    t_url = f'https://api.dsm-dms.com/meal/{t_date}'
-    html = requests.get(url).text
-    t_html = requests.get(t_url).text
-
-    #Debug code
-
-    print(now)
-    print(tommorrow)
-    print(date)
-    print(t_date)
-
     client = MealBot()
     client.run(token)

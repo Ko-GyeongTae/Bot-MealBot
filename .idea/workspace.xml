@@ -10,7 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30a72471-e778-4a09-97ec-ac28608f1f4a" name="Default Changelist" comment="" />
+    <list default="true" id="30a72471-e778-4a09-97ec-ac28608f1f4a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Discord.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Discord.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,6 +110,7 @@
       <workItem from="1606778611788" duration="107000" />
       <workItem from="1606804036858" duration="602000" />
       <workItem from="1606824699495" duration="1305000" />
+      <workItem from="1607248115127" duration="5214000" />
     </task>
     <servers />
   </component>
@@ -136,30 +140,34 @@
     <state x="326" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606917632090" />
     <state x="2246" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606267083317" />
     <state x="326" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606824694648" />
-    <state width="1877" height="280" key="GridCell.Tab.0.bottom" timestamp="1606778567205">
+    <state width="916" height="277" key="GridCell.Tab.0.bottom" timestamp="1607415553060">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="916" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040/0.1080.1920.1040@0.0.1920.1040" timestamp="1607415553060" />
     <state width="1877" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606640058411" />
     <state width="916" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606267066546" />
-    <state width="1877" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606778567205" />
-    <state width="1877" height="280" key="GridCell.Tab.0.center" timestamp="1606778567204">
+    <state width="916" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607384414676" />
+    <state width="916" height="277" key="GridCell.Tab.0.center" timestamp="1607415553059">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="916" height="277" key="GridCell.Tab.0.center/0.0.1920.1040/0.1080.1920.1040@0.0.1920.1040" timestamp="1607415553059" />
     <state width="1877" height="280" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606640058411" />
     <state width="916" height="279" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606267066546" />
-    <state width="1877" height="280" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606778567204" />
-    <state width="1877" height="280" key="GridCell.Tab.0.left" timestamp="1606778567204">
+    <state width="916" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607384414676" />
+    <state width="916" height="277" key="GridCell.Tab.0.left" timestamp="1607415553059">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="916" height="277" key="GridCell.Tab.0.left/0.0.1920.1040/0.1080.1920.1040@0.0.1920.1040" timestamp="1607415553059" />
     <state width="1877" height="280" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606640058411" />
     <state width="916" height="279" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606267066546" />
-    <state width="1877" height="280" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606778567204" />
-    <state width="1877" height="280" key="GridCell.Tab.0.right" timestamp="1606778567204">
+    <state width="916" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607384414676" />
+    <state width="916" height="277" key="GridCell.Tab.0.right" timestamp="1607415553060">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="916" height="277" key="GridCell.Tab.0.right/0.0.1920.1040/0.1080.1920.1040@0.0.1920.1040" timestamp="1607415553060" />
     <state width="1877" height="280" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606640058411" />
     <state width="916" height="279" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606267066546" />
-    <state width="1877" height="280" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606778567204" />
+    <state width="916" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607384414676" />
     <state x="2220" y="221" key="RollbackChangesDialog" timestamp="1606266960160">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -171,7 +179,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Python_bot$Bot_KS.coverage" NAME="Bot_KS Coverage Results" MODIFIED="1606399418530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
-    <SUITE FILE_PATH="coverage/Python_bot$Discord.coverage" NAME="Discord Coverage Results" MODIFIED="1606778726094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/Python_bot$Discord.coverage" NAME="Discord Coverage Results" MODIFIED="1607415553045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
     <SUITE FILE_PATH="coverage/Python_bot$discord_bot.coverage" NAME="discord_bot Coverage Results" MODIFIED="1606398560826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_bot$discord.coverage" NAME="discord_bot Coverage Results" MODIFIED="1606329419191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
