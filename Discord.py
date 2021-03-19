@@ -4,7 +4,7 @@ import requests
 import time
 from ast import literal_eval
 
-token = None
+token = ""
 
 msg = "x"
 now = "X"
@@ -24,6 +24,13 @@ class MealBot(discord.Client):
 
     async def on_message(self, message):
         # sender == bot ? None
+        breakfast = "X"
+        lunch = "X"
+        dinner = "X"
+        t_breakfast = "X"
+        t_lunch = "X"
+        t_dinner = "X"
+
         if message.author.bot:
             return None
         now = datetime.datetime.now()
@@ -69,6 +76,7 @@ class MealBot(discord.Client):
             t_dinner_dic = t_meal[t_date]['dinner']
             t_dinner = str(t_dinner_dic)
             t_dinner = t_dinner.translate({ord('['): '', ord(']'): '', ord("'"): '', ord(','): '\n'})
+            print(t_dinner)
         print(log)
 
         if message.content == '!도움':
