@@ -43,11 +43,11 @@ class MealBot(discord.Client):
         date = now.strftime('%Y-%m-%d')
         t_date = tommorrow.strftime('%Y-%m-%d')
 
-        log = str(message.author) + ' :: ' + message.content
-        log += ' :: ' + str(time.localtime().tm_year) + '-' + str(time.localtime().tm_mon) + '-' \
+        log = ' :: ' + str(time.localtime().tm_year) + '-' + str(time.localtime().tm_mon) + '-' \
             + str(time.localtime().tm_mday)
         log += ' :: ' + str(time.localtime().tm_hour) + ':' + str(time.localtime().tm_min) + ':' \
-               + str(time.localtime().tm_sec)
+            + str(time.localtime().tm_sec)
+        log += ' :: ' + str(message.author) + ' :: ' + message.content
         url = f'https://api.dsm-dms.com/meal/{date}'
         t_url = f'https://api.dsm-dms.com/meal/{t_date}'
         html = requests.get(url).text
