@@ -3,8 +3,12 @@ import datetime
 import requests
 import time
 from ast import literal_eval
+import os
+from dotenv import load_dotenv
 
-token = ""
+load_dotenv(verbose=True)
+
+token = os.getenv('TOKEN')
 
 msg = "x"
 now = "X"
@@ -76,7 +80,6 @@ class MealBot(discord.Client):
             t_dinner_dic = t_meal[t_date]['dinner']
             t_dinner = str(t_dinner_dic)
             t_dinner = t_dinner.translate({ord('['): '', ord(']'): '', ord("'"): '', ord(','): '\n'})
-            print(t_dinner)
         print(log)
 
         if message.content == '!도움':
