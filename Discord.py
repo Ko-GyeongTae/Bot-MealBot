@@ -89,6 +89,10 @@ class MealBot(discord.Client):
             msg += "!점심 - 점심밥 보여줌\n"
             msg += "!저녁 - 저녁밥 보여줌\n"
             msg += "!내일급식 - 내일급식 전체 보여줌\n```"
+            msg += "!내일아침 - 내일아침밥 보여줌\n"
+            msg += "!내일점심 - 내일점심밥 보여줌\n"
+            msg += "!내일저녁 - 내일저녁밥 보여줌\n"
+
             await channel.send(msg)
             return None
 
@@ -131,6 +135,30 @@ class MealBot(discord.Client):
             msg = "```\n" + "####" + t_date + "####"
             msg += "\n\n*** 아침 ***\n" + ' ' + t_breakfast
             msg += "\n\n*** 점심 ***\n" + ' ' + t_lunch
+            msg += "\n\n*** 저녁 ***\n" + ' ' + t_dinner
+            msg += "\n\n```"
+            await channel.send(msg)
+            return None
+
+        if message.content == "!내일아침":
+            channel = message.channel
+            msg = "```\n" + "####" + t_date + "####"
+            msg += "\n\n*** 내일아침 ***\n" + ' ' + t_breakfast
+            msg += "\n\n```"
+            await channel.send(msg)
+            return None
+
+        if message.content == "!내일점심":
+            channel = message.channel
+            msg = "```\n" + "####" + t_date + "####"
+            msg += "\n\n*** 점심 ***\n" + ' ' + t_lunch
+            msg += "\n\n```"
+            await channel.send(msg)
+            return None
+
+        if message.content == "!내일저녁":
+            channel = message.channel
+            msg = "```\n" + "####" + t_date + "####"
             msg += "\n\n*** 저녁 ***\n" + ' ' + t_dinner
             msg += "\n\n```"
             await channel.send(msg)
