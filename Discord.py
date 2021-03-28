@@ -88,10 +88,10 @@ class MealBot(discord.Client):
             msg += "!아침 - 아침밥 보여줌\n"
             msg += "!점심 - 점심밥 보여줌\n"
             msg += "!저녁 - 저녁밥 보여줌\n"
-            msg += "!내일급식 - 내일급식 전체 보여줌\n```"
+            msg += "!내일급식 - 내일급식 전체 보여줌\n"
             msg += "!내일아침 - 내일아침밥 보여줌\n"
             msg += "!내일점심 - 내일점심밥 보여줌\n"
-            msg += "!내일저녁 - 내일저녁밥 보여줌\n"
+            msg += "!내일저녁 - 내일저녁밥 보여줌\n```"
 
             await channel.send(msg)
             return None
