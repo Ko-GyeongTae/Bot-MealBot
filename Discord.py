@@ -164,6 +164,18 @@ class MealBot(discord.Client):
             await channel.send(msg)
             return None
 
+        #event
+        if message.content == "!저속모드":
+            channel = message.channel
+            msg = "저속모드를 실행합니다...."
+            await channel.send(msg)
+            msg = "멈춰!!!!!!!!!!!"
+            await channel.send(msg)
+
+        if message.content == "!고속모드":
+            channel = message.channel
+            msg = "풍악을 울려라!!!!!!!!! 가즈아ㅏㅏㅏㅏㅏㅏ!!!!"
+            await channel.send(msg)
 
 if __name__ == "__main__":
     client = MealBot()
